@@ -1,0 +1,80 @@
+grilla grl mostrar (f)(4) 
+
+ proced grilla - carga 
+
+	variable f tipo numerico = 0 
+	grl mostra (f)(1) = nombre 
+	grl mostra (f)(2) = fecha 
+	grl mostra (f)(3) = hora
+	grl mostra (f)(4) = saldo
+	F = 1 
+
+Abrir agd saldo
+leer agd saldo
+
+mientras not agd saldos.eof
+
+grl mostrar (f)(1) = agd saldo.nombre 
+grl mostrar (f)(2) = agd saldo.fecha
+grl mostrar (f)(3) = agd saldo.hora
+grl mostrar (f)(4) = agd saldo.saldo
+
+leer agd saldo 
+f=f+1
+
+fin minetras cerrar agd saldo
+fin procedimiento 
+
+
+
+
+
+
+
+
+
+busqueda rapida
+
+
+grilla grl 
+
+
+proced grilla - vector 
+
+variable f tipo numerico = 0, i = 0 
+grl mostrar (f)(1) = agd saldo.nombre 
+grl mostrar (f)(2) = agd saldo.fecha  
+grl mostrar (f)(3) = agd saldo.hora  
+grl mostrar (f)(4) = agd saldo.saldo
+
+
+mientras i < = 4 
+abrir agd saldo
+leer 
+mientras not agd saldo.eof y agd saldo.nombre<>vector (i) 
+leer agd saldo
+fin mientras 
+
+
+	mientras not agd saldo.eof y agd saldo nombre-
+
+	grl mostrar (f)(1) = agd saldo.nombre  
+	grl mostrar (f)(2) = agd saldo.fecha  
+	grl mostrar (f)(3) = agd saldo.hora 
+	grl mostrar (f)(4) = agd saldo."saldo"
+
+
+	f=f+1
+	fin minebtras 
+
+cerrar agd saldo
+i = i + 1
+fin mientras \
+
+
+
+
+
+
+
+ 
